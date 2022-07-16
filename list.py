@@ -36,4 +36,29 @@ cars=['audi', 'tesla', 'ford', 'bmw']
 for car in cars:
     print(car)
     print(f"{car} is a wonderful car awesome.")
-print('\tDriving a car can make you feel enjoyable')    
+print('\tDriving a car can make you feel enjoyable')  
+
+#using range()function
+for value in range(1,5):
+    print(value)
+
+#using range() to make a list of numbers by using list()function.
+numbers=list(range(1,6))
+print(numbers)
+
+#using range()function to skip a numbers
+even_numbers=list(range(2,19,2))  #here third argument 2 acts as a step size
+print(even_numbers)
+
+#using range() to insert a square numbers in list
+squares=[]
+for value in range(1,15):
+    #square=value**2
+    #squares.append(square)
+    squares.append(value**2)
+
+print(squares)    
+
+#another way
+squares=[value**2 for value in range(1,15)]
+print(squares)
